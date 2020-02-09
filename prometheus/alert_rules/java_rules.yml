@@ -1,0 +1,21 @@
+groups:
+- name: JVMUsage
+  rules:
+
+  - alert: JVMUsageWarning
+    expr: jvm_memory_bytes_used / jvm_memory_bytes_max{area="heap"} > 0.8 < 0.9
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Heap memory filling up (instance {{ $labels.instance }})"
+      description: "JVM memory is filling up (> 80%)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+  - alert: JVMUsageCritical
+    expr: jvm_memory_bytes_used / jvm_memory_bytes_max{area="heap"} > 0.9
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Heap memory filling up (instance {{ $labels.instance }})"
+      description: "JVM memory is filling up (> 80%)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"

@@ -1,0 +1,42 @@
+global:
+  # The smarthost and SMTP sender used for mail notifications.
+  smtp_smarthost: 'localhost:10025'
+  smtp_from: 'alerts@itchains.net'
+
+
+# The directory from which notification templates are read.
+templates: 
+- '/opt/alertmanager/template/*.tmpl'
+
+# The root route on which each incoming alert enters.
+route:
+  group_by: ['alertname', 'cluster', 'service']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 3h 
+  receiver: prometheus-alerts
+
+  routes:
+  - match_re:
+      service: ^(prometheus|grafana|grok_exporter|nodeexporter|mysqld_exporter)$
+    receiver: prometheus-alerts
+  - match:
+      severity: critical
+    receiver: prometheus-alerts
+  - match:
+      service: warning
+    receiver: prometheus-alerts
+
+    #inhibit_rules:
+    #- source_match:
+    #severity: 'critical'
+    #target_match:
+    #severity: 'warning'
+  # Apply inhibition if the alertname is the same.
+  #equal: ['alertname', 'cluster', 'service']
+
+receivers:
+- name: 'prometheus-alerts'
+  email_configs:
+  - to: 'alerts@itchains.net'
+    require_tls: false

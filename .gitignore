@@ -1,0 +1,5 @@
+aws/
+containerd/
+rh/
+prometheus/mysqld_exporter/.my.cnf
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=Alert Manager
+Documentation=https://prometheus.io/docs/alerting/overview/
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Restart=on-failure
+WorkingDirectory=/opt/alertmanager
+ExecStart=/opt/alertmanager/alertmanager --config.file=/opt/alertmanager/alertmanager.yml --log.level=error
+
+[Install]
+WantedBy=multi-user.target

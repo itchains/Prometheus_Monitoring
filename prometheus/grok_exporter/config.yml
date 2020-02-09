@@ -1,0 +1,21 @@
+global:
+    config_version: 2
+input:
+    type: file
+    path: /opt/prometheus/grok_exporter/example/exim-rejected-RCPT-examples.log
+    readall: true # Read from the beginning of the file? False means we start at the end of the file and read only new lines.
+grok:
+    patterns_dir: /opt/prometheus/grok_exporter/patterns
+    additional_patterns:
+    - 'EXIM_MESSAGE [a-zA-Z ]*'
+metrics:
+    - type: counter
+      name: exim_rejected_rcpt_total
+      help: Total number of rejected recipients, partitioned by error message.
+      match: '%{EXIM_DATE} %{EXIM_REMOTE_HOST} F=<%{EMAILADDRESS}> rejected RCPT <%{EMAILADDRESS}>: %{EXIM_MESSAGE:message}'
+      labels:
+          logfile: '{{base .logfile}}'
+          error_message: '{{.message}}'
+server:
+    host: ip-172-31-45-61.eu-central-1.compute.internal
+    port: 9144

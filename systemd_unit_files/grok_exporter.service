@@ -1,0 +1,14 @@
+[Unit]
+Description=Grok Exporter - parse unstructured log data to create structured data to export to Prometheus
+After=local-fs.target network-online.target network.target
+Wants=local-fs.target network-online.target network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+User=prometheus
+Group=prometheus
+ExecStart=/opt/prometheus/grok_exporter/grok_exporter -config /opt/prometheus/grok_exporter/config.yml
+
+[Install]
+WantedBy=multi-user.target

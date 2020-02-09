@@ -1,0 +1,21 @@
+groups:
+- name: SwapUsage
+  rules:
+
+  - alert: SwapUsageWarning
+    expr: (1 - (node_memory_SwapFree_bytes / node_memory_SwapTotal_bytes)) * 100 > 70
+    for: 60m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Swap is filling up (instance {{ $labels.instance }})"
+      description: "Swap is filling up (>70%)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+  - alert: SwapUsageCritical
+    expr: (1 - (node_memory_SwapFree_bytes / node_memory_SwapTotal_bytes)) * 100 > 90
+    for: 15m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Swap is filling up (instance {{ $labels.instance }})"
+      description: "Swap is filling up (>90%)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"

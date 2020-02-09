@@ -1,0 +1,133 @@
+t=2020-02-09T02:38:23+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=209.17.97.82 time_ms=0 size=29 referer=
+t=2020-02-09T02:41:41+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=109.183.47.173 time_ms=0 size=29 referer=
+t=2020-02-09T02:41:47+0000 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+t=2020-02-09T02:48:27+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped Stream Manager"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped BackendPluginManager" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+t=2020-02-09T02:48:27+0000 lvl=eror msg="Server shutdown" logger=server reason=nil
+t=2020-02-09T02:49:01+0000 lvl=info msg="Starting Grafana" logger=server version=6.6.1 commit=21bf8b71bc branch=HEAD compiled=2020-02-06T09:53:10+0000
+t=2020-02-09T02:49:01+0000 lvl=info msg="Config loaded from" logger=settings file=/opt/grafana/conf/defaults.ini
+t=2020-02-09T02:49:01+0000 lvl=info msg="Path Home" logger=settings path=/opt/grafana
+t=2020-02-09T02:49:01+0000 lvl=info msg="Path Data" logger=settings path=/opt/grafana/data
+t=2020-02-09T02:49:01+0000 lvl=info msg="Path Logs" logger=settings path=/opt/grafana/data/log
+t=2020-02-09T02:49:01+0000 lvl=info msg="Path Plugins" logger=settings path=/opt/grafana/data/plugins
+t=2020-02-09T02:49:01+0000 lvl=info msg="Path Provisioning" logger=settings path=/opt/grafana/conf/provisioning
+t=2020-02-09T02:49:01+0000 lvl=info msg="App mode production" logger=settings
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing SqlStore" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-02-09T02:49:01+0000 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing HTTPServer" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing BackendPluginManager" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing PluginManager" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing HooksService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing OSSLicensingService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing RemoteCache" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing QuotaService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing ServerLockService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing RenderingService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing AlertEngine" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing LoginService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing SearchService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing TracingService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing CleanUpService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing NotificationService" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+t=2020-02-09T02:49:01+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering renderer=phantomJS
+t=2020-02-09T02:49:01+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering renderer=phantomJS
+t=2020-02-09T02:49:01+0000 lvl=info msg="Initializing Stream Manager"
+t=2020-02-09T02:49:01+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-02-09T03:33:50+0000 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=502 remote_addr=109.183.47.173 time_ms=0 size=0 referer="http://3.126.130.129:3000/d/rYdddlPWk/node-exporter-full?orgId=1&from=now-30m&to=now&refresh=5s&var-DS_PROMETHEUS=Prometheus&var-job=node_exporter&var-name=VM2&var-node=ip-172-31-47-4.eu-central-1.compute.internal&var-port=9100"
+t=2020-02-09T03:42:10+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses=[mr@itchains.net] singleEmail=false
+t=2020-02-09T03:42:13+0000 lvl=eror msg="Failed to send alert notification email" logger=alerting.notifier.email error="Failed to send notification to email addresses: mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, mr@itchains.net, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 440cb883-006b-4e4d-86e4-ff49236d13d0)"
+t=2020-02-09T03:42:13+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, mr@itchains.net, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 440cb883-006b-4e4d-86e4-ff49236d13d0)"
+t=2020-02-09T03:42:13+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, mr@itchains.net, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 440cb883-006b-4e4d-86e4-ff49236d13d0)"
+t=2020-02-09T03:42:13+0000 lvl=eror msg="Failed to send alert notifications" logger=context userId=1 orgId=1 uname=admin error="Failed to send notification to email addresses: mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, mr@itchains.net, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 440cb883-006b-4e4d-86e4-ff49236d13d0)"
+t=2020-02-09T03:42:13+0000 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/alert-notifications/test status=500 remote_addr=109.183.47.173 time_ms=3027 size=48 referer=http://3.126.130.129:3000/alerting/notification/1/edit
+t=2020-02-09T03:42:55+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses=[alerts@itchains.net] singleEmail=false
+t=2020-02-09T03:42:56+0000 lvl=eror msg="Failed to send alert notification email" logger=alerting.notifier.email error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 5b297726-8f2a-4839-b063-85bc5268aa2c)"
+t=2020-02-09T03:42:56+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 5b297726-8f2a-4839-b063-85bc5268aa2c)"
+t=2020-02-09T03:42:56+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 5b297726-8f2a-4839-b063-85bc5268aa2c)"
+t=2020-02-09T03:42:56+0000 lvl=eror msg="Failed to send alert notifications" logger=context userId=1 orgId=1 uname=admin error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 5b297726-8f2a-4839-b063-85bc5268aa2c)"
+t=2020-02-09T03:42:56+0000 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/alert-notifications/test status=500 remote_addr=109.183.47.173 time_ms=200 size=48 referer=http://3.126.130.129:3000/alerting/notification/1/edit
+t=2020-02-09T03:43:46+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses=[alerts@itchains.net] singleEmail=false
+t=2020-02-09T03:43:46+0000 lvl=eror msg="Failed to send alert notification email" logger=alerting.notifier.email error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 8f791725-215e-4ff3-8cd6-86516ebc1dbd)"
+t=2020-02-09T03:43:46+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 8f791725-215e-4ff3-8cd6-86516ebc1dbd)"
+t=2020-02-09T03:43:46+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 8f791725-215e-4ff3-8cd6-86516ebc1dbd)"
+t=2020-02-09T03:43:46+0000 lvl=eror msg="Failed to send alert notifications" logger=context userId=1 orgId=1 uname=admin error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 8f791725-215e-4ff3-8cd6-86516ebc1dbd)"
+t=2020-02-09T03:43:46+0000 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/alert-notifications/test status=500 remote_addr=109.183.47.173 time_ms=200 size=48 referer=http://3.126.130.129:3000/alerting/notification/1/edit
+t=2020-02-09T03:44:57+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses=[alerts@itchains.net] singleEmail=false
+t=2020-02-09T03:44:57+0000 lvl=eror msg="Failed to send alert notification email" logger=alerting.notifier.email error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: fa9dbd93-d338-49a2-9b59-5e45e1a369f0)"
+t=2020-02-09T03:44:57+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: fa9dbd93-d338-49a2-9b59-5e45e1a369f0)"
+t=2020-02-09T03:44:57+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: fa9dbd93-d338-49a2-9b59-5e45e1a369f0)"
+t=2020-02-09T03:44:57+0000 lvl=eror msg="Failed to send alert notifications" logger=context userId=1 orgId=1 uname=admin error="Failed to send notification to email addresses: alerts@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: Grafana <marian@rosiile.com>, marian@rosiile.com (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: fa9dbd93-d338-49a2-9b59-5e45e1a369f0)"
+t=2020-02-09T03:44:57+0000 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/alert-notifications/test status=500 remote_addr=109.183.47.173 time_ms=211 size=48 referer=http://3.126.130.129:3000/alerting/notification/1/edit
+t=2020-02-09T03:45:43+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped Stream Manager"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped BackendPluginManager" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+t=2020-02-09T03:45:43+0000 lvl=eror msg="Server shutdown" logger=server reason=nil
+t=2020-02-09T03:45:43+0000 lvl=info msg="Starting Grafana" logger=server version=6.6.1 commit=21bf8b71bc branch=HEAD compiled=2020-02-06T09:53:10+0000
+t=2020-02-09T03:45:43+0000 lvl=info msg="Config loaded from" logger=settings file=/opt/grafana/conf/defaults.ini
+t=2020-02-09T03:45:43+0000 lvl=info msg="Path Home" logger=settings path=/opt/grafana
+t=2020-02-09T03:45:43+0000 lvl=info msg="Path Data" logger=settings path=/opt/grafana/data
+t=2020-02-09T03:45:43+0000 lvl=info msg="Path Logs" logger=settings path=/opt/grafana/data/log
+t=2020-02-09T03:45:43+0000 lvl=info msg="Path Plugins" logger=settings path=/opt/grafana/data/plugins
+t=2020-02-09T03:45:43+0000 lvl=info msg="Path Provisioning" logger=settings path=/opt/grafana/conf/provisioning
+t=2020-02-09T03:45:43+0000 lvl=info msg="App mode production" logger=settings
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing SqlStore" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-02-09T03:45:43+0000 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing HTTPServer" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing BackendPluginManager" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing PluginManager" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing HooksService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing OSSLicensingService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing RemoteCache" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing QuotaService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing ServerLockService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing RenderingService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing AlertEngine" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing LoginService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing SearchService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing TracingService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing CleanUpService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing NotificationService" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+t=2020-02-09T03:45:43+0000 lvl=info msg="Initializing Stream Manager"
+t=2020-02-09T03:45:43+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-02-09T03:45:43+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering renderer=phantomJS
+t=2020-02-09T03:45:43+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering renderer=phantomJS
+t=2020-02-09T03:46:12+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses=[alerts@itchains.net] singleEmail=false
+t=2020-02-09T03:46:47+0000 lvl=info msg="Sending alert notification to" logger=alerting.notifier.email addresses="[alerts@itchains.net  mr@itchains.net]" singleEmail=false
+t=2020-02-09T03:46:47+0000 lvl=eror msg="Failed to send alert notification email" logger=alerting.notifier.email error="Failed to send notification to email addresses:  mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: mr@itchains.net (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 368f8ecf-2482-42c6-99d6-0fe46d4e62ba)"
+t=2020-02-09T03:46:47+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses:  mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: mr@itchains.net (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 368f8ecf-2482-42c6-99d6-0fe46d4e62ba)"
+t=2020-02-09T03:46:47+0000 lvl=eror msg="failed to send notification" logger=alerting.notifier uid= error="Failed to send notification to email addresses:  mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: mr@itchains.net (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 368f8ecf-2482-42c6-99d6-0fe46d4e62ba)"
+t=2020-02-09T03:46:47+0000 lvl=eror msg="Failed to send alert notifications" logger=context userId=1 orgId=1 uname=admin error="Failed to send notification to email addresses:  mr@itchains.net: gomail: could not send email 1: 554 Email address is not verified. The following identities failed the check in region EU-CENTRAL-1: mr@itchains.net (Service: AmazonSimpleEmailService; Status Code: 400; Error Code: MessageRejected; Request ID: 368f8ecf-2482-42c6-99d6-0fe46d4e62ba)"
+t=2020-02-09T03:46:47+0000 lvl=eror msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/alert-notifications/test status=500 remote_addr=109.183.47.173 time_ms=438 size=48 referer=http://3.126.130.129:3000/alerting/notification/1/edit

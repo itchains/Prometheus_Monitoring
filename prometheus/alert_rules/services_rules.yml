@@ -1,0 +1,40 @@
+groups:
+- name: DiskLoad
+  rules:
+
+  - alert: OutOfDiskSpaceWarning
+    expr: (node_filesystem_avail_bytes{mountpoint="/*"}  * 100) / node_filesystem_size_bytes{mountpoint="/rootfs"} < 20
+    for: 120m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Out of disk space (instance {{ $labels.instance }})"
+      description: "Disk is almost full (< 20% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+  - alert: OutOfDiskSpaceCritical
+    expr: (node_filesystem_avail_bytes{mountpoint="/*"}  * 100) / node_filesystem_size_bytes{mountpoint="/rootfs"} < 10
+    for: 30m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Out of disk space (instance {{ $labels.instance }})"
+      description: "Disk is almost full (< 10% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+  - alert: OutOfInodesWarning
+    expr: node_filesystem_files_free{mountpoint ="/*"} / node_filesystem_files{mountpoint ="/*"} * 100 < 20
+    for: 120m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Out of inodes (instance {{ $labels.instance }})"
+      description: "Disk is almost running out of available inodes (< 20% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
+  - alert: OutOfInodesCritical
+    expr: node_filesystem_files_free{mountpoint ="/*"} / node_filesystem_files{mountpoint ="/*"} * 100 < 10
+    for: 30m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Out of inodes (instance {{ $labels.instance }})"
+      description: "Disk is almost running out of available inodes (< 10% left)\n  VALUE = {{ $value }}\n  LABELS: {{ $labels }}"
+
