@@ -1,7 +1,7 @@
 global:
   # The smarthost and SMTP sender used for mail notifications.
   smtp_smarthost: 'localhost:10025'
-  smtp_from: 'alerts@itchains.net'
+  smtp_from: 'alerts@acme.net'
 
 
 # The directory from which notification templates are read.
@@ -18,7 +18,7 @@ route:
 
   routes:
   - match_re:
-      service: ^(prometheus|grafana|grok_exporter|nodeexporter|mysqld_exporter)$
+      service: ^(prometheus|grafana|grok_exporter|node_exporter|mysqld_exporter)$
     receiver: prometheus-alerts
   - match:
       severity: critical
@@ -38,5 +38,5 @@ route:
 receivers:
 - name: 'prometheus-alerts'
   email_configs:
-  - to: 'alerts@itchains.net'
+  - to: 'alerts@acme.net'
     require_tls: false
